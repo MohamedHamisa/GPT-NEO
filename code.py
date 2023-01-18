@@ -11,7 +11,7 @@ from transformers import pipeline # First line
 generator = pipeline('text-generation', model='EleutherAI/gpt-neo-2.7B') # Second line , 2.7 bilion Parameters
 
 #Generate Text using Prompt
-prompt = "How to be loke Mohamed Hamisa" # Third line
+prompt = "How to be like Mohamed Hamisa" # Third line
 res = generator(prompt, max_length=50, do_sample=True, temperature=0.9) # Fourth line result , do_samples to leverage sampling in model , Temp to model next set of Probablilites
 
 #Output Text
